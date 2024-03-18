@@ -1,0 +1,41 @@
+<html>
+     <head>
+        <title>Music product</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+          <div class="ArrierePlan">
+              <div class="navbar">
+                <img src="IMAGE5.png" class="logo">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Playlist</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">A Propos De Nous</a></li>
+                </ul>
+              </div>
+              <div class="contenus">
+                  <div class="col-gauche">
+                      <h1>Ma Playlist<br>De La Soirée<Label></Label></h1>
+                  </div>
+                  <div class="col-droite">
+                      <p>Jouer De La Musique</p>
+                      <img src="IMAGE4.png" id="btnplay">
+               </div>
+            </div>
+        </div>
+        <audio id="MaMusic">
+            <source src="Tamsir.mp3" type="audio\mp3">
+        </audio>
+   <script>
+       var MaMusic = document.getElementById("MaMusic")
+       var btnplay = document.getElementById("btnplay")
+
+       btnplay.onclick = function(){
+        MaMusic.play();
+       }
+   </script>
+
+    </body>
+</html>
